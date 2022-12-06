@@ -1,0 +1,18 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    Adopcion: {{Adopcion}}
+    <br>
+    Adopcion:  
+    {%for Adop in nombre_de_Mascota%}
+        {{Adop.nombre_de_Mascota}}
+        {{Adop.genero}}
+        <br>
+    {%endfor%}
+
+   
+
+{% endblock %}
